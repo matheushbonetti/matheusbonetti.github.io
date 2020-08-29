@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+    <div class="grid">
+      <section class="home-intro">
+        <span class="home-intro-greeting">Hi! My name is</span>
+        <h1>Matheus Henrique Bonetti</h1>
+        <p class="home-intro-lead">I like to design and manage the development of digital experiences</p>
+        <a class="page-link" href="/#aboutme">About me</a>
+        <a class="page-link" href="/cases/">Case Studies</a>
+      </section>
+      <section class="home-photo">
+        <img src="/assets/img/portrait.jpg">
+      </section>
+    </div>
+    <section id="aboutme" class="home-aboutme content">
+      {{ content }}
+    </section>
+
+  </body>
+
+</html>
