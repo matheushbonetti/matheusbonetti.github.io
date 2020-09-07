@@ -14,12 +14,17 @@
         </label>
         <div class="trigger grid">
             <div class="menu-list">
-            {%- for path in page_paths -%}
+              <a class="page-link" href="/#aboutme">About me</a>
+              <a class="page-link" href="/cases/">Selected work</a>
+              <a class="page-link" href="https://www.linkedin.com/in/matheushbonetti/" target="_blank">LinkedIn Profile</a>
+              <a class="page-link" href="https://www.matheusbonetti.com/resume.pdf" target="_blank">PDF Resume</a>
+              <a class="page-link" href="mailto:matheushbonetti+pro@gmail.com" target="_blank">Email me</a>
+            <!-- {%- for path in page_paths -%}
                 {%- assign my_page = site.pages | where: "path", path | first -%}
                 {%- if my_page.title -%}
                 <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                 {%- endif -%}
-            {%- endfor -%}
+            {%- endfor -%} -->
             </div>
         </div>
       </nav>

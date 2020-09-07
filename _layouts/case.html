@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
+  <body>
+    {%- include tagmanager-body.html -%}
+    {%- include header.html -%}
+    <div class="grid case-hero">
+      <section class="case-intro">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.roles }}</p>
+        <a href="#case-content" class="page-link no-text">Go to content <span class="arrow-icon go-down"></span></a>
+      </section>
+      <section class="case-photo">
+        <img src="{{ page.cover }}">
+      </section>
+    </div>
+    <section id="case-content" class="case-content">
+      <div class="content-column">
+        {{ content }}
+      </div>
+    </section>
+    <div class="grid case-next">
+      <section class="case-intro">
+        <h2>next case</h2>
+      </section>
+      <section class="case-photo">
+        <a href="/cases/{{ page.nextcase }}">
+          <img src="/assets/img/cover/{{ page.nextcase }}.jpg" alt="{{ page.nextcasename }}">
+          <h2>{{ page.nextcasename }}</h2>
+        </a>
+      </section>
+    </div>
+  </body>
+
+</html>

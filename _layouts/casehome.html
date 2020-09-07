@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
+  <body>
+    {%- include tagmanager-body.html -%}
+    {%- include header.html -%}
+    <div class="grid cases-home">
+      <section class="cases-intro">
+        <h1>selected work</h1>
+        <p class="home-intro-lead">These are some of the projects I have recently worked on.</p>
+      </section>
+      <section class="cases-list">
+          <a href="/cases/rdstation">
+            <img src="../assets/img/cover/rdstation.jpg" alt="RD Station">
+            <h2>rd station</h2>
+            <p>Branding, UI, UX, Frontend Dev, Optimization, Project Management</p>
+          </a>
+          <a href="/cases/rdsummit">
+            <img src="../assets/img/cover/rdsummit.jpg" alt="RD Summit">
+            <h2>rd summit 2018</h2>
+            <p>Branding, UI, UX, Frontend Dev, Project Management</p>
+          </a>
+          <a href="/cases/sajadv">
+            <img src="../assets/img/cover/sajadv.jpg" alt="SAJ ADV">
+            <h2>saj adv</h2>
+            <p>UI, UX, Frontend Dev, Optimization, Project Management</p>
+          </a>
+      </section>
+      
+    </div>
+
+  </body>
+
+</html>

@@ -4,22 +4,59 @@
   {%- include head.html -%}
 
   <body>
-
+    {%- include tagmanager-body.html -%}
     {%- include header.html -%}
-    <div class="grid">
+    <div class="grid home-hero">
       <section class="home-intro">
         <span class="home-intro-greeting">Hi! My name is</span>
         <h1>Matheus Henrique Bonetti</h1>
         <p class="home-intro-lead">I like to design and manage the development of digital experiences</p>
         <a class="page-link" href="/#aboutme">About me</a>
-        <a class="page-link" href="/cases/">Case Studies</a>
+        <a class="page-link" href="/cases/">Selected work</a>
       </section>
       <section class="home-photo">
         <img src="/assets/img/portrait.jpg">
       </section>
     </div>
-    <section id="aboutme" class="home-aboutme content">
-      {{ content }}
+    <section id="aboutme" class="home-aboutme about">
+      <div class="aboutme-greeting">
+        <p class="lead">Hi! My name is <strong>Matheus Henrique Bonetti</strong>, I am a digital designer living in the beautiful Florianópolis island, in Brazil.</p>
+        <a class="button linkedin" href="https://www.linkedin.com/in/matheushbonetti/" target="_blank">Visit my LinkedIn Profile</a>
+        <a class="button resume" href="https://www.matheusbonetti.com/resume.pdf" target="_blank">Check my PDF Resume</a>
+        <a class="button resume" href="mailto:matheushbonetti+pro@gmail.com" target="_blank">Talk to me</a>
+        <div class="aboutme-info">
+          <h2>Education</h2>
+          <ul>
+            <li><strong>Product Management</strong> PM3 - ongoing</li>
+            <li><strong>Emerging Leaders Leadership program</strong> A.karta - 2019</li>
+            <li><strong>Project Management</strong> FGV - 2013</li>
+            <li><strong>Design Thinking Action Lab</strong> Stanford University - Online - 2013</li>
+            <li><strong>B.A. in Graphic Design</strong> UNESP - 2009 - 2012</li>
+          </ul>
+          <h2>Languages</h2>
+          <ul>
+            <li><strong>Portuguese</strong> Native</li>
+            <li><strong>English</strong> Advanced</li>
+            <li><strong>Spanish</strong> Intermediary</li>
+            <li><strong>Japanese</strong> Basic</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="aboutme-intro">
+        <p>From websites to softwares, I am experienced in almost every development phase of digital products. I can design user experiences (</strong>UX</strong>), prototype user interfaces (</strong>UI</strong>) and implement my design work through <strong>HTML/CSS</strong> and some <strong>Javascript</strong> and front-end development knowledge. I am also proficient in understating <strong>web analytics</strong> data, doing <strong>user interviews</strong> and <strong>usability tests</strong>, crafting and validating <strong>optimization hypothesis</strong> through <strong>A/B testing</strong> and <strong>experimentation</strong>.</p>
+        <p>After years designing and developing digital products, I am now diving in the management aspects of them to empower other designers and developers in this process. I have already been collecting experiences with <strong>product discovery and delivery</strong>, <strong>data analysis</strong>, <strong>roadmap definition</strong>, <strong>product vision and strategy</strong>.</p>
+        <h2>Professional experience</h2>
+        <h3>RD Station (2016 - 2020) <br><strong>Senior Designer</strong></h3>
+        <p>Resultados Digitais is the top marketing automation SAAS company in Brazil. I have been working there as a Senior Designer on the Marketing team, developing and being responsible for several assets that supports branding campaigns, inbound marketing operation and product marketing strategy.</p>
+        <p><strong>Main activities:</strong> Web Design, Front-end Development, UX Design, Conversion Rate Optimization, Product Management.</p>
+        <h3>Freelance Designer (2013 - 2020)</h3>
+        <p>I have worked as a freelance designer, offering design and web development solutions to my own clients.</p>
+        <p><strong>Main activities:</strong> Web Design, Front-end Development, UX Design, Graphic Design, Project Management.</p>
+        <h3>MSTech (2011 - 2014) <br><strong>Web Designer</strong></h3>
+        <h3>G&T Internet (2010 - 2011) <br><strong>Web Designer</strong></h3>
+        <h3>Megavision Print Shop (2008) <br><strong>Graphic Designer</strong></h3>
+      </div>
     </section>
 
   </body>
